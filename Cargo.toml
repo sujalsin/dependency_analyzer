@@ -1,0 +1,23 @@
+[package]
+name = "dependency-analyzer"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dependency Analyzer Contributors"]
+description = "A tool to analyze Python project dependencies, detect conflicts, and visualize dependency graphs"
+
+[dependencies]
+petgraph = "0.6"        # For graph data structures and algorithms
+reqwest = { version = "0.11", features = ["blocking", "json"] }  # For HTTP requests
+serde = { version = "1.0", features = ["derive"] }  # For JSON serialization
+serde_json = "1.0"      # For JSON handling
+serde_yaml = "0.9"      # For YAML parsing
+toml = "0.7"           # For parsing Pipfile and pyproject.toml
+semver = "1.0"         # For version parsing and comparison
+clap = { version = "4.3", features = ["derive"] }  # For CLI argument parsing
+dot-generator = "0.2"   # For generating graphviz dot files
+walkdir = "2.3"        # For filesystem traversal
+anyhow = "1.0"         # For error handling
+colored = "2.0"        # For terminal colors
+regex = "1.9"          # For text parsing
+tokio = { version = "1.0", features = ["full"] }  # For async runtime
+which = "4.4.0"        # Add the which crate

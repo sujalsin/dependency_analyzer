@@ -1,0 +1,22 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Generated files
+*.dot
+*.png
+!docs/*.png
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.local

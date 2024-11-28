@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = ">=1.17.0"  # Oldest version requirement
+pandas = ">=1.1.0"  # Oldest version
+scikit-learn = ">=0.23.0"  # Oldest version
+tensorflow = ">=2.3.0"  # Oldest version
+torch = ">=1.7.0"    # Oldest version
+transformers = ">=4.0.0"  # Oldest version
+jax = ">=0.2.0"
+datasets = ">=1.0.0"
+tokenizers = ">=0.10.0"
+tqdm = ">=4.50.0"
+matplotlib = ">=3.3.0"
+seaborn = ">=0.11.0"
+pillow = ">=8.0.0"
+
+[dev-packages]
+pytest = ">=6.0"
+black = ">=21.0"
+isort = ">=5.0"
+mypy = ">=0.900"
+
+[requires]
+python_version = "3.9"

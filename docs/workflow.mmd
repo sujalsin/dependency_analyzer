@@ -1,0 +1,25 @@
+graph TD
+    A[Python Project] --> B[Dependency Scanner]
+    B --> C1[requirements.txt]
+    B --> C2[setup.py]
+    B --> C3[Pipfile]
+    B --> C4[pyproject.toml]
+    B --> C5[environment.yml]
+    
+    C1 & C2 & C3 & C4 & C5 --> D[Dependency Parser]
+    D --> E[Version Analysis]
+    D --> F[Conflict Detection]
+    
+    E --> G[Graph Generator]
+    F --> G
+    
+    G --> H1[Text Output]
+    G --> H2[DOT Graph]
+    G --> H3[PNG Visualization]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style D fill:#ddf,stroke:#333,stroke-width:2px
+    style E fill:#fdd,stroke:#333,stroke-width:2px
+    style F fill:#fdd,stroke:#333,stroke-width:2px
+    style G fill:#dfd,stroke:#333,stroke-width:2px
